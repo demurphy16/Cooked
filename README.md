@@ -3,7 +3,7 @@ A student project that makes it easier to prepare and cook meals
 
 ## Overview
 
-_**Project Title** Cooked is an application that is desgined to help everday "chefs" prepare and cook their meals. Cooked will allow users to create, read, update and delete recipes as well as view a list of suggested meals with their recipes. The app will provide users with an easy to read list of ingredients and a helpful feature that will store an array of ingredients from the selected meal and convert it to a shopping list for easy organiztation and meal prep._
+_**Project Title** Cooked is an application that is desgined to help everday "chefs" prepare and cook their meals. Cooked will allow users to create, read, update and delete recipes as well as view a list of suggested meals with their recipes. The app will provide users with an easy to read list of ingredients and a helpful feature that will store an array of ingredients from the selected meal and convert it to a shopping list for easy organization and meal prep._
 
 
 <br>
