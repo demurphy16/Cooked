@@ -87,14 +87,29 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+|__ containers/
+      |__MainContainer.jsx
+|__ layouts/
+      |__Layout.jsx
+|__ screens/
+      |__RecipeCreate.jsx
+      |__RecipeEdit.jsx
+      |__Recipes.jsx
+      |__Login.jsx
+      |__Register.jsx
+      |__MyRecipes.jsx
 |__ services/
+      |__apiConfig.js
+      |__auth.js
+      |__recipes.js
+      |__ingredients.js
+|__App.js
+|__App.css
+|__index.js
+|__index.css
+|__reportWebVitals.js
 
 ```
 
