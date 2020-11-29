@@ -190,6 +190,7 @@ src
 | User Authentification             |     L     |     4 hrs      |     TBD     |     TBD     |
 | Stlying Advanced            |     L     |     5 hrs      |     TBD     |     TBD     |
 | Debug/Deploy             |      L    |     4 hrs      |     TBD     |     TBD     |
+| Total            |      L    |     40 hrs      |     TBD     |     TBD     |
 
 
 
