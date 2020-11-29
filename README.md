@@ -50,24 +50,26 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
 
 #### Wireframes
 
+##### Desktop
 
-- Desktop Landing
+
+- Landing
 
 https://www.figma.com/file/L0Ot2EDK5poEvJprAzjlv2/Cooked---Landing-Page?node-id=0%3A1
 
-- Desktop Sign Up
+- Sign Up
 
 https://www.figma.com/file/H3lbZQYE1YJ3xDlSKeV4BZ/Signup-Desktop?node-id=0%3A1
 
-- Desktop Login
+- Login
 
 https://www.figma.com/file/EPabwahHNlCxmaPRGi3VUL/Desktop-Login?node-id=0%3A1
 
-- Desktop HomePage
+- HomePage
 
 https://www.figma.com/file/wnstPvnFZpZBY6uPYuyr7c/Homepage-Desktop?node-id=0%3A1
 
-- Recipe Create Desktop
+- Recipe Create
 
 https://www.figma.com/file/QVUY0wbNMGVSDhg9ort7nD/Untitled?node-id=0%3A1
 
@@ -86,6 +88,34 @@ https://www.figma.com/file/FVaWvIYcb0ZVPXQb6vvfgK/Ingredient-List-Desktop?node-i
 - See More Details
 
 https://www.figma.com/file/mvKCfG4mhov3VunO4ZFQbQ/See-More-Details-Desktop?node-id=0%3A1
+
+
+##### Mobile
+
+- Landing Page
+
+https://www.figma.com/file/EDDHhmgAp3BDnh8i4ZDMVF/Untitled?node-id=0%3A1
+
+- Sign Up
+
+https://www.figma.com/file/NMLhUYObeNfZJuChXnkcx7/Sign-Up-Mobile?node-id=0%3A1
+
+- Login
+
+https://www.figma.com/file/cdL1OKCgB0Vn8us5Fo4vxz/Login-Mobile?node-id=0%3A1
+
+- Homepage
+
+https://www.figma.com/file/yrwwJMfb3u37AVEKXQvt5q/Mobile-Homepage?node-id=0%3A1
+
+- Recipe Create
+
+https://www.figma.com/file/1iNPi7qk9eTXtonGFHn9m9/Untitled?node-id=0%3A1
+
+- Recipe Edit
+
+
+
 
 
 
