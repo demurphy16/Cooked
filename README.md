@@ -5,7 +5,8 @@ A student project that makes it easier to prepare and cook meals
 
 _**Project Title** Cooked is an application that is desgined to help everday "chefs" prepare and cook their meals. Cooked will allow users to create, read, update and delete recipes as well as view a list of suggested meals with their recipes. The app will provide users with an easy to read list of ingredients and a helpful feature that will store an array of ingredients from the selected meal and convert it to a shopping list for easy organization and meal prep._
 
-_***Goals*** My main goal is to have a functioning application that allows users to view, update, create, and delete recipes as well as easily be able to convert ingredients lists into a shopping list._ 
+_***Goals*** My main goal is to have a functioning application that allows users to view, update, create, and delete recipes as well as easily be able to convert ingredients lists into a shopping list._ <br>
+
 _***Challenges*** I think I will face a number of challeneges. I am still struglling to fully conceptualize how all of the Rails components tie into one another so I think that will be an exciting challenge to tackle. Another challenge I expect to face will be the logic of the front-end. I want to stress an easy transition from viewing a recipe to actaully cooking it. I think my biggest challenge will be staying organized and efficient. The file structure gets big fast and it becomes difficult to stay on task with so many moving pieces. This is something that I really want to stay focused on throughout the entirety of this project. _
 
 
@@ -31,9 +32,6 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
  <br>
  -Have a fully functioning, deployed, full stack application 
  
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
 <br>
 
 ### Goals
