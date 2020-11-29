@@ -56,26 +56,21 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
 
 https://www.figma.com/file/L0Ot2EDK5poEvJprAzjlv2/Cooked---Landing-Page?node-id=0%3A1
 
+- Desktop Sign Up
 
-![Dummy Link](url)
+https://www.figma.com/file/H3lbZQYE1YJ3xDlSKeV4BZ/Signup-Desktop?node-id=0%3A1
 
-- Desktop Hero
+- Desktop Login
 
-![Dummy Link](url)
+https://www.figma.com/file/EPabwahHNlCxmaPRGi3VUL/Desktop-Login?node-id=0%3A1
 
-- Resource Index
+- Desktop HomePage
 
-![Dummy Link](url)
 
-- Resource Show
 
-![Dummy Link](url)
 
-- Tablet Resource Index
 
-![Dummy Link](url)
 
-- Mobile Resource Index
 
 #### Component Tree
 
