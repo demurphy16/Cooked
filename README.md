@@ -69,11 +69,9 @@ https://www.figma.com/file/EPabwahHNlCxmaPRGi3VUL/Desktop-Login?node-id=0%3A1
 https://www.figma.com/file/wnstPvnFZpZBY6uPYuyr7c/Homepage-Desktop?node-id=0%3A1
 
 - Recipe Create Desktop
+https://www.figma.com/file/QVUY0wbNMGVSDhg9ort7nD/Untitled?node-id=0%3A1
 
-
-
-
-
+- Recipe Edit
 
 
 #### Component Tree
@@ -100,6 +98,7 @@ src
       |__Login.jsx
       |__Register.jsx
       |__MyRecipes.jsx
+      |__IngredientList
 |__ services/
       |__apiConfig.js
       |__auth.js
