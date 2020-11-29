@@ -10,6 +10,18 @@ _***Goals*** My main goal is to have a functioning application that allows users
 _***Challenges*** I think I will face a number of challeneges. I am still struglling to fully conceptualize how all of the Rails components tie into one another so I think that will be an exciting challenge to tackle. Another challenge I expect to face will be the logic of the front-end. I want to stress an easy transition from viewing a recipe to actaully cooking it. I think my biggest challenge will be staying organized and efficient. The file structure gets big fast and it becomes difficult to stay on task with so many moving pieces. This is something that I really want to stay focused on throughout the entirety of this project. _
 
 
+### Libraries and Dependencies
+
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|      React       | _Front-end JavaScript libr. to build out UI components_ |
+|   React Router   | _To handle routes in the app, using dynamic routing_ |
+| React Router Dom | _Holds the router components for the app._ |
+|     Rails        | _MVC framework that provides a foundation for the database._ |
+|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+
+
+
 ## MVP
 
 -Have a RESTful JSON API. 
