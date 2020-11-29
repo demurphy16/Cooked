@@ -114,6 +114,20 @@ https://www.figma.com/file/1iNPi7qk9eTXtonGFHn9m9/Untitled?node-id=0%3A1
 
 - Recipe Edit
 
+https://www.figma.com/file/HaWd4EnCsKgXyeJaYZEqTI/Recipe-Edit-Mobile?node-id=0%3A1
+
+- My Recipes
+
+https://www.figma.com/file/PHUW5ukjlSvZuUVGO5Y2ZG/My-Recipes-Mobile?node-id=0%3A1
+
+- Ingredienst List
+
+https://www.figma.com/file/8J0qAvp1fKBgtxs90CjDXU/Ingredient-List-Mobile?node-id=0%3A1
+
+- See More Details
+
+https://www.figma.com/file/exuDZatLZhuJwjgNmZoVUN/See-More-Details-Mobile?node-id=0%3A1
+
 
 
 
