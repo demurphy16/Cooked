@@ -5,12 +5,32 @@ A student project that makes it easier to prepare and cook meals
 
 _**Project Title** Cooked is an application that is desgined to help everday "chefs" prepare and cook their meals. Cooked will allow users to create, read, update and delete recipes as well as view a list of suggested meals with their recipes. The app will provide users with an easy to read list of ingredients and a helpful feature that will store an array of ingredients from the selected meal and convert it to a shopping list for easy organization and meal prep._
 
+_***Goals*** My main goal is to have a functioning application that allows users to view, update, create, and delete recipes as well as easily be able to convert ingredients lists into a shopping list._ 
+_***Challenges*** I think I will face a number of challeneges. I am still struglling to fully conceptualize how all of the Rails components tie into one another so I think that will be an exciting challenge to tackle. Another challenge I expect to face will be the logic of the front-end. I want to stress an easy transition from viewing a recipe to actaully cooking it. I think my biggest challenge will be staying organized and efficient. The file structure gets big fast and it becomes difficult to stay on task with so many moving pieces. This is something that I really want to stay focused on throughout the entirety of this project. _
 
-<br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+-Have a RESTful JSON API. 
+<br>
+-Build a Ruby on Rails server, exposing RESTful JSON endpoints.
+<br>
+-Build a database with at least 3 tables:
+<br>
+--Meals have many ingredients, ingredients belong to many meals (join table)
+<br>
+-Utilize Rails to define models for interacting with the database.
+<br>
+-Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between your non-User tables
+<br>
+ -- Users can create, update, and delete their own meals/recipes as well as read others 
+ <br>
+ -Have a working, interactive React app, built using npx create-react-app that has at least 8 rendered components and utilizes funtional/class components effectively
+ <br>
+ -Demonstrate full CRUD on the front-end: The non-user table (meals and ingredients) will provide CRUD for the front-end.
+ <br>
+ -Have a fully functioning, deployed, full stack application 
+ 
 
 _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
