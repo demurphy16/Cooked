@@ -69,18 +69,24 @@ https://www.figma.com/file/EPabwahHNlCxmaPRGi3VUL/Desktop-Login?node-id=0%3A1
 https://www.figma.com/file/wnstPvnFZpZBY6uPYuyr7c/Homepage-Desktop?node-id=0%3A1
 
 - Recipe Create Desktop
+
 https://www.figma.com/file/QVUY0wbNMGVSDhg9ort7nD/Untitled?node-id=0%3A1
 
 - Recipe Edit
+
 https://www.figma.com/file/PJe98gUmZ0nsqHYUYYBSCF/Recipe-Edit-Desktop?node-id=0%3A1
 
 - My Recipes
+
 https://www.figma.com/file/QZ76at592ugSi1LYPmlv1A/My-Recipes?node-id=0%3A1
 
 - Ingredients List
+
 https://www.figma.com/file/FVaWvIYcb0ZVPXQb6vvfgK/Ingredient-List-Desktop?node-id=0%3A1
 
 - See More Details
+
+https://www.figma.com/file/mvKCfG4mhov3VunO4ZFQbQ/See-More-Details-Desktop?node-id=0%3A1
 
 
 
