@@ -210,8 +210,9 @@ https://app.diagrams.net/#G1SUc_fL4R2j4izOdeAGJvluWYvDj-Idm1
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
+- Advanved styling features that include a star rating for certain meals
+- Popularity feature that will track how many times a user had cooked a meal 
+- Search function that will allow users to search for a specific type of meal (ex. Chicken dish, dish that takes less than an hour, etc)
 ***
 
 ## Code Showcase
