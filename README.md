@@ -50,7 +50,6 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 - Desktop Landing
 
@@ -96,7 +95,6 @@ https://www.figma.com/file/mvKCfG4mhov3VunO4ZFQbQ/See-More-Details-Desktop?node-
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
