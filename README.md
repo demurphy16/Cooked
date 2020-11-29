@@ -18,7 +18,7 @@ _***Challenges*** I think I will face a number of challeneges. I am still strugl
 |   React Router   | _To handle routes in the app, using dynamic routing_ |
 | React Router Dom | _Holds the router components for the app._ |
 |     Rails        | _MVC framework that provides a foundation for the database._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Ruby         | _Objected oriented programming language for back-end functionality _ |
 
 
 
