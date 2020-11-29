@@ -179,17 +179,17 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Boiler Plate Ruby/Rails    |    L     |     3 hrs      |     TBD     |    TBD   |
+| Boiler Plate Ruby/Rails    |    H     |     3 hrs      |     TBD     |    TBD   |
 | Models/Controllers/Routes |    H     |     3 hrs      |     TBD     |     TBD     |
-| Backend CRUD             |          |     4 hrs      |     TBD   |     TBD     |
-| Seed Data             |          |     4 hrs      |     TBD    |     TBD     |
-| Backend Testing            |          |     1 hrs      |     TBD     |     TBD     |
-| Font End CRUD             |          |     6 hrs      |     TBD    |     TBD     |
-| Login/Register             |          |     4 hrs      |     TBD     |     TBD     |
-| Stlying Basics             |          |     2 hrs      |     TBD     |     TBD     |
-| User Authentification             |          |     4 hrs      |     TBD     |     TBD     |
-| Stlying Advanced            |          |     5 hrs      |     TBD     |     TBD     |
-| Debug/Deploy             |          |     4 hrs      |     TBD     |     TBD     |
+| Backend CRUD             |       H   |     4 hrs      |     TBD   |     TBD     |
+| Seed Data             |      M    |     4 hrs      |     TBD    |     TBD     |
+| Backend Testing            |    M      |     1 hrs      |     TBD     |     TBD     |
+| Font End CRUD             |      M    |     6 hrs      |     TBD    |     TBD     |
+| Login/Register             |      M    |     4 hrs      |     TBD     |     TBD     |
+| Stlying Basics             |      M    |     2 hrs      |     TBD     |     TBD     |
+| User Authentification             |     L     |     4 hrs      |     TBD     |     TBD     |
+| Stlying Advanced            |     L     |     5 hrs      |     TBD     |     TBD     |
+| Debug/Deploy             |      L    |     4 hrs      |     TBD     |     TBD     |
 
 
 
