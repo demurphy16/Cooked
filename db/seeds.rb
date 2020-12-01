@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Ingredient.destroy_all
+Recipe.destroy_all
+User.destroy_all
+
+
+@admin = User.create(username: 'admin', email: 'admin@gmail.com', password: '123456')
+
+puts "#{User.count} users created"
+
+@recipe1 = Recipe.create(name: 'recipe1', time: '15 minutes', img: 'recipe1.com', user: @admin)
+
+puts "#{Recipe.count} recipes created"
+
+@ingredient1 = Ingredient.create(name: 'salt', quantity: '1 oz', recipe: @recipe1)
+@ingredient2 = Ingredient.create(name: 'pepper', quantity: '2 oz', recipe: @recipe1)
+@ingredient2 = Ingredient.create(name: 'chicken', quantity: '3 oz', recipe: @recipe1)
+
+puts "#{Ingredient.count} ingredients created"
