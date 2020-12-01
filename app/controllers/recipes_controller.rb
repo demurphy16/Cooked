@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :set_recipe, only: [:show, :update, :destroy]
+  before_action :set_recipe, only: [:show, :update, :destroy, :add_ingredient]
   before_action :authorize_request, only: [:my_recipes, :create, :update, :destroy]
   # GET /recipes
   def index
@@ -44,6 +44,13 @@ class RecipesController < ApplicationController
   # DELETE /recipes/1
   def destroy
     @recipe.destroy
+  end
+
+  def add_ingredient
+    @ingredient = Ingredient.find(params[:ingredient_id])
+    @recipe.ingredients.push(@ingredient)
+
+    render json: @recipe, include: :ingredients
   end
 
   private
