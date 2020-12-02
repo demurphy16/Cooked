@@ -13,11 +13,12 @@ User.destroy_all
 
 
 @admin = User.create(username: 'admin', email: 'admin@gmail.com', password: '123456')
+@admin5 = User.create(username: 'admin5', email: 'admin5@email.com', password: '123456')
 
 puts "#{User.count} users created"
 
 @recipe1 = Recipe.create(name: 'recipe1', time: '15 minutes', img: 'recipe1.com', user: @admin)
-
+@recipe2 = Recipe.create(name: 'pasta', time: '6 minutes', img: 'recipe2.com', user: @admin5)
 puts "#{Recipe.count} recipes created"
 
 @ingredient1 = Ingredient.create(name: 'salt', quantity: '1 oz', recipe: @recipe1)

@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import{ Switch, Route } from 'react-router-dom'
-
 
 import {getAllRecipes} from '../services/recipes'
 

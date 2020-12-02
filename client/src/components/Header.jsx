@@ -12,6 +12,7 @@ export default function Header(props) {
           <>
             <p>{currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
+            <Link to='/myRecipes'>My Recipes</Link>
           </>
           :
           <Link to='/login'>Login/Register</Link>

@@ -5,6 +5,7 @@ import './App.css';
 import Home from './screens/Home'
 import Layout from './layouts/layout';
 import Login from './screens/Login'
+import MyRecipes from './screens/MyRecipes'
 import Register from './screens/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 
@@ -67,6 +68,10 @@ function App() {
         <Route path='/home'>
           <Home
           />
+        </Route>
+
+        <Route path='/myRecipes'>
+          <MyRecipes />
         </Route>
         
           <Route path='/'>
