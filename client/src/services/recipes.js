@@ -14,7 +14,7 @@ export const getUserRecipe = async (recipeId, userId) => {
 }
 
 // get one
-export const getOneRecipe = async () => {
+export const getOneRecipe = async (id) => {
   const resp = await api.get(`/recipes/${id}`)
 }
 
@@ -25,7 +25,7 @@ export const createRecipe = async (recipeData) => {
 }
 
 // update
-export const updateRecipe = async (id, recipeData) {
+export const updateRecipe = async (id, recipeData) => {
   const resp = await api.put(`/recipes/${id}`, { recipe: recipeData})
   return resp.data
 }

@@ -65,7 +65,8 @@ function App() {
         </Route>
         
         <Route path='/home'>
-          <Home />
+          <Home
+          />
         </Route>
         
           <Route path='/'>
