@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function Header(props) {
 
-  const {currentUser} = props
+  const { currentUser, handleLogout } = props
   return (
     <div>
       <h1>Cooked</h1>
@@ -11,7 +11,7 @@ export default function Header(props) {
         currentUser ?
           <>
             <p>{currentUser.username}</p>
-            <button>Logout</button>
+            <button onClick={handleLogout}>Logout</button>
           </>
           :
           <Link to='/login'>Login/Register</Link>

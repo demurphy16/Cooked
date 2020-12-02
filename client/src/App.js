@@ -6,7 +6,7 @@ import Home from './screens/Home'
 import Layout from './layouts/layout';
 import Login from './screens/Login'
 import Register from './screens/Register';
-import { loginUser, registerUser, verifyUser } from './services/auth'
+import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 
 function App() {
 
@@ -37,8 +37,18 @@ function App() {
     history.push('/login')
   }
 
+  const handleLogout = () => {
+    setCurrentUser(null)
+    localStorage.removeItem('authToken')
+    removeToken()
+    history.push('/')
+  }
+
   return (
-      <Layout currentUser={currentUser}>
+    <Layout
+      currentUser={currentUser}
+      handleLogout={handleLogout}
+    >
         <Switch>
         
           <Route path='/login'>
