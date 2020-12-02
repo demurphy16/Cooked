@@ -16,6 +16,7 @@ export const getUserRecipe = async (recipeId, userId) => {
 // get one
 export const getOneRecipe = async (id) => {
   const resp = await api.get(`/recipes/${id}`)
+  return resp.data
 }
 
 // create

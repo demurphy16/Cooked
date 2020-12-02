@@ -1,8 +1,8 @@
 import api from './apiConfig'
 
 // get all ingredients specific to a recipe
-export const getIngredients = async (ingredientId, recipeId) => {
-  const resp = await api.get(`/ingredients/${ingredientId}/recipes/${recipeId}`)
+export const getIngredients = async (recipeId) => {
+  const resp = await api.get(`/recipes/:id/ingredients${recipeId}`)
   return resp.data
 
 }

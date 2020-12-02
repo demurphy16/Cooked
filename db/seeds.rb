@@ -21,8 +21,12 @@ puts "#{User.count} users created"
 @recipe2 = Recipe.create(name: 'pasta', time: '6 minutes', img: 'recipe2.com', user: @admin5)
 puts "#{Recipe.count} recipes created"
 
-@ingredient1 = Ingredient.create(name: 'salt', quantity: '1 oz', recipe: @recipe1)
+@ingredient1 = Ingredient.create(name: 'salt', quantity: '1 oz', recipe: @recipe2)
 @ingredient2 = Ingredient.create(name: 'pepper', quantity: '2 oz', recipe: @recipe1)
-@ingredient2 = Ingredient.create(name: 'chicken', quantity: '3 oz', recipe: @recipe1)
+@ingredient3 = Ingredient.create(name: 'chicken', quantity: '3 oz', recipe: @recipe2)
+
+# @recipe2.ingredients.push(@ingredient1, @ingredient2)
 
 puts "#{Ingredient.count} ingredients created"
+
+

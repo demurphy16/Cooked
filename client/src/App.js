@@ -8,6 +8,8 @@ import Login from './screens/Login'
 import MyRecipes from './screens/MyRecipes'
 import Register from './screens/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
+import MoreDetails from './screens/MoreDetails';
+import RecipeCreate from './screens/RecipeCreate';
 
 function App() {
 
@@ -72,6 +74,10 @@ function App() {
 
         <Route path='/myRecipes'>
           <MyRecipes />
+        </Route>
+
+        <Route path={`/recipes/:id`}>
+          <MoreDetails />
         </Route>
         
           <Route path='/'>
