@@ -9,6 +9,7 @@ import MyRecipes from './screens/MyRecipes'
 import Register from './screens/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 import MoreDetails from './screens/MoreDetails';
+import MainContainer from './containers/MainContainer';
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
-    history.push('/login')
+    history.push('/home')
   }
 
   const handleLogout = () => {
@@ -52,19 +53,8 @@ function App() {
       handleLogout={handleLogout}
     >
         <Switch>
-        
-          <Route path='/login'>
-          <Login
-            handleLogin={handleLogin}
-          />
-          </Route>
-        
-          <Route path='/register'>
-            <Register
-              handleRegister={handleRegister}
-            />
-          </Route>
-        
+      
+          
         <Route path='/home'>
           <Home />
         </Route>
@@ -73,12 +63,19 @@ function App() {
           <MyRecipes />
         </Route>
 
+        <Route path='/createRecipe'>
+          <MainContainer />
+        </Route>
+
         <Route path={`/recipes/:id`}>
           <MoreDetails />
         </Route>
         
         <Route path='/'>
-          <h3>Container</h3>
+          <Login
+            handleLogin={handleLogin}
+            handleRegister={handleRegister}
+          />
         </Route>
         
         </Switch>

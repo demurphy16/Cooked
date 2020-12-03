@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import './Login.css'
+import Register from './Register'
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -17,31 +18,43 @@ export default function Login(props) {
   }
   
   return (
+    <div>
+      <h1 className="login-title">Welcome To Cooked</h1>
+      <p className="login-description">Cooked is an application that is desinged to help amatuer chefs blah blah</p>
+      <h3 className="login-title">Login or Register to Sign Up</h3>
+    <div className="login-page-container">
     <div className="login-container">
-      <h3>Login or Click Register to Sign Up</h3>
-    <form className="login-form"
+    <form className="login-form landing-form"
       onSubmit={(e) => {
       e.preventDefault()
       props.handleLogin(formData)
-    }}>
-      <label className="login-label username-label">Username:
-        <input className="login-input username-input"
+          }}>
+          <h3>Login</h3>
+      {/* <label className="login-label username-label">Username: */}
+        <input className="landing-input"
           type='text'
           name='username'
+          placeholder="Username"
           value={formData.username}
           onChange={handleChange}
         />
-      </label>
-      <label className="login-label password-label">Password:
-        <input className="login-input password-input"
+      {/* </label> */}
+      {/* <label className="login-label password-label">Password: */}
+        <input className="landing-input"
           type='password'
           name='password'
+          placeholder="Password"
           value={formData.password}
           onChange={handleChange}
         />
-      </label>
-      <button className="login-button" type="submit">Login</button>
-      </form>
+      {/* </label> */}
+      <button className="login-button landing-button" type="submit">Login</button>
+        </form>
+        </div>
+      <Register
+        handleRegister={props.handleRegister}
+      />
+      </div>
       </div>
   )
 }

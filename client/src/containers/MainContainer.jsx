@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Route } from 'react-router-dom'
 import { createRecipe, getAllRecipes } from '../services/recipes'
+
+import RecipeCreate from '../screens/RecipeCreate'
 
 export default function MainContainer(props) {
   const [recipes, setRecipes] = useState([])
@@ -11,7 +13,7 @@ export default function MainContainer(props) {
       const recipeData = await getAllRecipes()
       setRecipes(recipeData)
     }
-    fetchRecipes
+    fetchRecipes()
   }, [])
 
 

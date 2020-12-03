@@ -44,7 +44,8 @@ export default function RecipeCreate(props) {
         value={formData.img}
         onChange={handleChange}
         />
-       </label>
+      </label>
+      <button>Create</button>
     </form>
   )
 }

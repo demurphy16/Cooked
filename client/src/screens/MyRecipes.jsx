@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Ingredients from '../components/Ingredients'
 
+import '../components/Recipes.css'
 import {getUserRecipe} from '../services/recipes'
 
 export default function MyRecipes() {
@@ -17,12 +17,12 @@ export default function MyRecipes() {
   }, [])
 
   return (
-    <div>
+    <div className="recipe-page-container">
       {myRecipes.map(myRecipe =>
-        <div>
-          {myRecipe.name}
-          {myRecipe.time}
-          <img src={myRecipe.img} />
+        <div className="recipe-container">
+          <h5 className="recipe-name my-recipe">{myRecipe.name}</h5>
+          <h5 className="mecipe-time my-recipe">Cook Time: {myRecipe.time}</h5>
+          <img className="recipe-image"src={myRecipe.img} />
           <Link to={`/recipes/${myRecipe.id}`}>More Details</Link>
         </div>)}
     </div>
