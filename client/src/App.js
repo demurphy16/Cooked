@@ -9,7 +9,6 @@ import MyRecipes from './screens/MyRecipes'
 import Register from './screens/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 import MoreDetails from './screens/MoreDetails';
-import RecipeCreate from './screens/RecipeCreate';
 
 function App() {
 
@@ -55,21 +54,19 @@ function App() {
         <Switch>
         
           <Route path='/login'>
-          <h3>Login</h3>
           <Login
-          handleLogin={handleLogin}
+            handleLogin={handleLogin}
           />
           </Route>
         
           <Route path='/register'>
-          <Register
-          handleRegister={handleRegister}
-          />
-        </Route>
+            <Register
+              handleRegister={handleRegister}
+            />
+          </Route>
         
         <Route path='/home'>
-          <Home
-          />
+          <Home />
         </Route>
 
         <Route path='/myRecipes'>
@@ -80,9 +77,9 @@ function App() {
           <MoreDetails />
         </Route>
         
-          <Route path='/'>
+        <Route path='/'>
           <h3>Container</h3>
-          </Route>
+        </Route>
         
         </Switch>
 
