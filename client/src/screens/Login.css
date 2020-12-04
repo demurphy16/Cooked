@@ -1,3 +1,10 @@
+.full-login {
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvb2tpbmclMjBkZXNrdG9wfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .login-page-container {
   display: flex;
   justify-content: space-evenly;
@@ -14,7 +21,7 @@
 
 .landing-form {
   border: 1px solid green;
-  margin-top: 5vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   height: 37vh;
@@ -32,4 +39,13 @@
 
 .login-description {
   text-align: center;
+}
+
+.format {
+  border: 1px solid red;
+}
+.login-footer {
+  width: 100vw;
+  height: 10vh;
+  bottom: 0;
 }

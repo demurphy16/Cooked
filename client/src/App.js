@@ -28,7 +28,7 @@ function App() {
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
-    history.push('/login')
+    history.push('/recipes')
   }
   const handleLogout = () => {
     setCurrentUser(null)

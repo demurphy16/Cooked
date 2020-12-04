@@ -18,9 +18,9 @@ export default function Login(props) {
   }
   
   return (
-    <div>
+    <div className="full-login">
       <h1 className="login-title">Welcome To Cooked</h1>
-      <p className="login-description">Cooked is an application that is desinged to help amatuer chefs blah blah</p>
+      <p className="login-description">Cooked is an application that is desinged to help amatuer chefs organize and create</p>
       <h3 className="login-title">Login or Register to Sign Up</h3>
     <div className="login-page-container">
     <div className="login-container">
