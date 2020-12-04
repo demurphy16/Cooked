@@ -20,11 +20,13 @@ export default function MyRecipes() {
     <div className="recipe-page-container">
       {myRecipes.map(myRecipe =>
         <div className="recipe-container">
-          <h5 className="recipe-name my-recipe">{myRecipe.name}</h5>
-          <h5 className="mecipe-time my-recipe">Cook Time: {myRecipe.time}</h5>
-          <img className="recipe-image"src={myRecipe.img} />
-          <Link to={`/recipes/${myRecipe.id}`}>More Details</Link>
-        </div>)}
+          <h5 className="recipe-name recipe">{myRecipe.name}</h5>
+          <h5 className="recipe-time recipe">Cook Time: {myRecipe.time}</h5>
+          <Link to={`/recipes/${myRecipe.id}`}>
+            <img className="recipe-image" src={myRecipe.img} />
+          </Link>
+        </div>
+      )}
     </div>
   )
 }

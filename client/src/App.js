@@ -2,11 +2,11 @@ import {useState, useEffect} from 'react'
 import { Switch, Route, useHistory } from 'react-router-dom'
 
 import './App.css';
+import AddIngredients from './screens/AddIngredients'
 import Home from './screens/Home'
 import Layout from './layouts/layout';
 import Login from './screens/Login'
 import MyRecipes from './screens/MyRecipes'
-import Register from './screens/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 import MoreDetails from './screens/MoreDetails';
 import MainContainer from './containers/MainContainer';
@@ -59,6 +59,7 @@ function App() {
           <Home />
         </Route>
 
+
         <Route path='/myRecipes'>
           <MyRecipes />
         </Route>
@@ -70,7 +71,11 @@ function App() {
         <Route path={`/recipes/:id`}>
           <MoreDetails />
         </Route>
-        
+
+        <Route path={`/recipes/:id/add/ingredients`}>
+
+        </Route>
+
         <Route path='/'>
           <Login
             handleLogin={handleLogin}

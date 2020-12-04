@@ -1,0 +1,16 @@
+.more-details-title {
+  text-align: center;
+}
+
+.more-details-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.more-details-button-container {
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 5px, 10px;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function RecipeCreate(props) {
+  console.log(props)
   const [formData, setFormData] = useState({
     name: "",
     time: "",
@@ -45,7 +47,7 @@ export default function RecipeCreate(props) {
         onChange={handleChange}
         />
       </label>
-      <button>Create</button>
-    </form>
+      <Link to={`/recipes/:id/ingredients`}><button>Create</button></Link>
+    </form >
   )
 }

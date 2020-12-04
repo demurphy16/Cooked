@@ -1,38 +1,51 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory, Link, Route } from 'react-router-dom'
 
 // import { getIngredients } from '../services/ingredients'
 import { getOneRecipe } from '../services/recipes'
+import { destroyRecipe } from '../services/recipes'
+import './Ingredients.css'
 
 
 export default function Ingredients(props) {
-
-  const { id } = useParams()
-  console.log(id)
-
-  // const ingredientList = props.myRecipes.find((r) => r._id === Number(id))
-  // console.log(ingredientList)
-  
-  const [rec, setRec] = useState({})
+  const history = useHistory()
+  const { id } = useParams()  
+  const [rec, setRec] = useState([])
 
   useEffect(() => {
     const fetchIngredients = async () => {
-      console.log("Hello")
       const ingredientsData = await getOneRecipe(Number(id))
       setRec(ingredientsData)
-      console.log(`Ingredients ${ingredientsData}`)
     }
     fetchIngredients()
-    console.log(rec)
   }, [id])
 
+  const handleDelete = async (id) => {
+    await destroyRecipe(id)
+    setRec(prevState => prevState.filter(recipe => recipe.id != id))
+    history.push('/myRecipes')
+  }
+
+
   return (
-    <div>
+    <>
+    <Route path="/recipes/:id/foreign">
+        
+    </Route>
+    <div className="more-details-page-container">
+      <h2 className="more-details-title">{rec.name}</h2>
+      <img src={rec.img} />
+      <div className="more-details-container">
        {rec.ingredients && rec.ingredients.map(ingredient =>
-         <div>
-           {ingredient.name}
-           {ingredient.quantity}
-         </div>)} 
-    </div>
+         <div className="ingredients-container">
+           <h4 className="more-details-name ing">{`${ingredient.name}, ${ingredient.quantity}`}</h4>
+         </div>)}
+      </div>
+        <div className="more-details-button-container">
+        <button className="details-button" onClick={() => handleDelete(rec.id)}>Delete Recipe</button>
+        <Link to={`/recipes/${rec.id}/edit`}><button className="details-button">Edit Recipe</button></Link>
+       </div>
+      </div>
+      </>
   )
 }

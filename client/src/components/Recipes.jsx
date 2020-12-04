@@ -19,13 +19,13 @@ export default function Recipes() {
   return (
     <div className="recipe-page-container">
       {recipes.map(recipe =>
-        <Link to={`/recipes/${recipe.id}`}>
           <div className="recipe-container">
             <h4 className="recipe-name recipe">{recipe.name}</h4>
             <h5 className="recipe-name recipe">Cook Time: {recipe.time}</h5>
-            <img className="recipe-image" src={recipe.img} />
+            <Link to={`/recipes/${recipe.id}/foreign`}>  
+              <img className="recipe-image" src={recipe.img} />
+            </Link>
           </div>
-        </Link>
       )}
     </div>
   )
