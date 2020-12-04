@@ -47,7 +47,7 @@ export default function RecipeCreate(props) {
         onChange={handleChange}
         />
       </label>
-      <Link to={`/recipes/:id/ingredients`}><button>Create</button></Link>
+      <button>Create</button>
     </form >
   )
 }

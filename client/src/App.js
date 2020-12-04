@@ -1,21 +1,15 @@
 import {useState, useEffect} from 'react'
-import { Switch, Route, useHistory } from 'react-router-dom'
-
+import { Switch, Route, useHistory, Redirect } from 'react-router-dom'
 import './App.css';
-import AddIngredients from './screens/AddIngredients'
-import Home from './screens/Home'
 import Layout from './layouts/layout';
 import Login from './screens/Login'
-import MyRecipes from './screens/MyRecipes'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
-import MoreDetails from './screens/MoreDetails';
 import MainContainer from './containers/MainContainer';
 
-function App() {
 
+function App() {
   const [currentUser, setCurrentUser] = useState(null)
   const history = useHistory()
-
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser()
@@ -26,56 +20,36 @@ function App() {
     }
     handleVerify()
   }, [])
-
-
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
-    history.push('/home')
+    history.push('/recipes')
   }
-
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
-    history.push('/home')
+    history.push('/login')
   }
-
   const handleLogout = () => {
     setCurrentUser(null)
     localStorage.removeItem('authToken')
     removeToken()
     history.push('/')
   }
-
   return (
     <Layout
       currentUser={currentUser}
       handleLogout={handleLogout}
     >
         <Switch>
-      
-          
+        <Route path='/recipes'>
+          <MainContainer
+          currentUser={currentUser}
+          />
+        </Route>
         <Route path='/home'>
-          <Home />
+          <Redirect  to='/recipes' />
         </Route>
-
-
-        <Route path='/myRecipes'>
-          <MyRecipes />
-        </Route>
-
-        <Route path='/createRecipe'>
-          <MainContainer />
-        </Route>
-
-        <Route path={`/recipes/:id`}>
-          <MoreDetails />
-        </Route>
-
-        <Route path={`/recipes/:id/add/ingredients`}>
-
-        </Route>
-
         <Route path='/'>
           <Login
             handleLogin={handleLogin}
@@ -84,9 +58,7 @@ function App() {
         </Route>
         
         </Switch>
-
       </Layout>
   );
 }
-
 export default App;

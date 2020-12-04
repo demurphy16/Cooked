@@ -19,7 +19,7 @@ export default function MyRecipes() {
   return (
     <div className="recipe-page-container">
       {myRecipes.map(myRecipe =>
-        <div className="recipe-container">
+        <div className="recipe-container" key={myRecipe.id}>
           <h5 className="recipe-name recipe">{myRecipe.name}</h5>
           <h5 className="recipe-time recipe">Cook Time: {myRecipe.time}</h5>
           <Link to={`/recipes/${myRecipe.id}`}>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :ingredients 
-  resources :recipes
+  resources :recipes do
+    resources :ingredients
+  end
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
   resources :users, only: :create

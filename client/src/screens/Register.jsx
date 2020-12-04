@@ -50,7 +50,7 @@ export default function Register(props) {
           type='password'
           name='password'
           value={formData.password}
-          placeholder="Password (minimum 6 characters)"
+          placeholder="Password (minimum 6)"
           onChange={handleChange}
         />
       {/* </label> */}

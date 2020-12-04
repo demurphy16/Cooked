@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useHistory, Link, Route } from 'react-router-dom'
+import AddIngredients from '../screens/AddIngredients'
 
 // import { getIngredients } from '../services/ingredients'
 import { getOneRecipe } from '../services/recipes'
@@ -11,6 +12,7 @@ export default function Ingredients(props) {
   const history = useHistory()
   const { id } = useParams()  
   const [rec, setRec] = useState([])
+  const [ingredientToggle, setIngredientToggle] = useState(false)
 
   useEffect(() => {
     const fetchIngredients = async () => {
@@ -18,21 +20,18 @@ export default function Ingredients(props) {
       setRec(ingredientsData)
     }
     fetchIngredients()
-  }, [id])
+  }, [])
 
-  const handleDelete = async (id) => {
-    await destroyRecipe(id)
-    setRec(prevState => prevState.filter(recipe => recipe.id != id))
-    history.push('/myRecipes')
-  }
+  // const handleDelete = async (id) => {
+  //   await destroyRecipe(id)
+  //   setRec(prevState => prevState.filter(recipe => recipe.id != id))
+  //   history.push('/recipes/myRecipes')
+  // }
 
 
   return (
     <>
-    <Route path="/recipes/:id/foreign">
-        
-    </Route>
-    <div className="more-details-page-container">
+      <div className="more-details-page-container">
       <h2 className="more-details-title">{rec.name}</h2>
       <img src={rec.img} />
       <div className="more-details-container">
@@ -42,9 +41,15 @@ export default function Ingredients(props) {
          </div>)}
       </div>
         <div className="more-details-button-container">
-        <button className="details-button" onClick={() => handleDelete(rec.id)}>Delete Recipe</button>
+        <button className="details-button" onClick={() => props.handleDelete(rec.id)}>Delete Recipe</button>
         <Link to={`/recipes/${rec.id}/edit`}><button className="details-button">Edit Recipe</button></Link>
-       </div>
+        </div>
+        <button onClick={
+          () => {ingredientToggle ? setIngredientToggle(false) : setIngredientToggle(true)}
+        }>Add Ingredients</button>
+        {ingredientToggle && 
+        <AddIngredients />
+        }
       </div>
       </>
   )
