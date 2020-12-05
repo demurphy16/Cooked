@@ -17,6 +17,7 @@ export default function MyRecipes() {
   }, [])
 
   return (
+    <div className="recipe-ultra-container">
     <div className="recipe-page-container">
       {myRecipes.map(myRecipe =>
         <div className="recipe-container" key={myRecipe.id}>
@@ -27,6 +28,7 @@ export default function MyRecipes() {
           </Link>
         </div>
       )}
-    </div>
+      </div>
+      </div>
   )
 }

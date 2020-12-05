@@ -1,13 +1,12 @@
 .header-container {
-  border: 1px solid red;
-  background-color: rgba(255, 255, 0, 0.502);
+  border-bottom: 3px ridge black;
+  background-color: rgba(123, 123, 123, 0.947);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 95px;
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
-/* link {
-  text-decoration: none;
-  color: white;
-  font-style: italic;
-} */

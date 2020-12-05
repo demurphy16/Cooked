@@ -1,15 +1,20 @@
 .recipe-ultra-container {
   display: flex;
   justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
+  background-size: cover;
 }
 .recipe-page-container {
-  margin-top: 10vh;
-  border: 3px dotted black;
+  margin-top: 25vh;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.486);
+  border: 3px ridge black;
+  background-image: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 70vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-color: rgb(194, 230, 247); */
 }
 
 .recipe-container {
@@ -20,22 +25,15 @@
   min-width: 430px;
   min-height: 360px;
   margin: 10vh 5vw;
-  /* margin-right: 5vw;
-  margin-left: 5vw; */
-  background-color: rgb(242, 242, 242);
+  background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvb2tpbmd8ZW58MHwwfDB8&auto=format&fit=crop&w=400&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px ridge grey;
 }
 
 .recipe {
   padding: 7px;
   margin: 5px;
-}
-
-.recipe-name {
-
-}
-
-.recipe-time {
-
 }
 
 .recipe-image {

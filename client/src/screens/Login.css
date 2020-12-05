@@ -1,31 +1,33 @@
 .full-login {
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvb2tpbmclMjBkZXNrdG9wfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvb2tpbmd8ZW58MHwwfDB8&auto=format&fit=crop&w=400&q=60);
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .login-page-container {
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px solid red; */
+  
 }
 
 
 .login-container {
-  /* border: 1px solid red; */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .landing-form {
-  border: 1px solid green;
-  margin-top: 10vh;
+  background-color: rgba(109, 102, 102, 0.406);
+  border-radius: 15px;
+  margin-top: 7vh;
   display: flex;
   flex-direction: column;
-  height: 37vh;
-  width: 30vw;
+  height: 260px;
+  width: 310px;
   border-radius: 10px;
   padding: 10px;
   align-items: center;
@@ -34,18 +36,11 @@
 
 .login-title {
   text-align: center;
-  margin-top: 7vh;
+  margin-top: 0%;
+  padding-top: 60px;
 }
 
 .login-description {
   text-align: center;
 }
 
-.format {
-  border: 1px solid red;
-}
-.login-footer {
-  width: 100vw;
-  height: 10vh;
-  bottom: 0;
-}

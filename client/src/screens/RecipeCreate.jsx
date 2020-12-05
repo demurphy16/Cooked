@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import './RecipeCreate.css'
 
 export default function RecipeCreate(props) {
   console.log(props)
@@ -18,11 +18,14 @@ export default function RecipeCreate(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <div className="create-page-container">
+    <div className="create-form-container">
+    <form className="create-form"
+      onSubmit={(e) => {
       e.preventDefault()
       props.handleCreate(formData)
     }}>
-      <h3>Create a Recipe</h3>
+      <h3 className="create-title">Create a Recipe</h3>
       <label>Recipe Name:
       <input
         type='text'
@@ -48,6 +51,8 @@ export default function RecipeCreate(props) {
         />
       </label>
       <button>Create</button>
-    </form >
+      </form >
+    </div>
+    </div>
   )
 }
