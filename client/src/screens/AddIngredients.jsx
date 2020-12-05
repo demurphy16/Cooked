@@ -1,6 +1,9 @@
 import {useEffect, useState} from'react'
 import { getOneRecipe } from '../services/recipes'
 import { useParams } from 'react-router-dom'
+
+import '../components/Ingredients.css'
+
 export default function AddIngredients(props) {
   const [ing, setIng] = useState({
     name: "",
@@ -25,23 +28,26 @@ export default function AddIngredients(props) {
   }, [id])
   return (
     <div>
-      <form onSubmit={(e) => {
-      e.preventDefault()
-      props.handleAddIngredient(Number(id), ing)
+      <form className="add-ingred-form"
+        onSubmit={(e) => {
+        e.preventDefault()
+        props.handleAddIngredient(Number(id), ing)
     }}>
         <input
           name="name"
           type="text"
           value={ing.name}
           onChange={handleChange}
+          placeholder="Input Ingredient"
         />
         <input
           name="quantity"
           type="text"
           value={ing.quantity}
           onChange={handleChange}
+          placeholder="Input Quantity"
         />
-        <button>Add Your Ingredients</button>
+        <button className="add-ingred-button">Add Your Ingredients</button>
       </form>
     </div>
   )

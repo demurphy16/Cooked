@@ -14,6 +14,7 @@ export default function MainContainer(props) {
   const [recipes, setRecipes] = useState([])
   const [ingredients, setIngredients] = useState([])
   const history = useHistory()
+  const { currentUser } = props
   
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -72,7 +73,8 @@ export default function MainContainer(props) {
 
       <Route path={`/recipes/:id`}>
         <Ingredients
-        handleDelete={handleDelete}
+          currentUser={currentUser}
+          handleDelete={handleDelete}
         />
       </Route>
 
