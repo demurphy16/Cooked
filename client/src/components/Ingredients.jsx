@@ -16,6 +16,7 @@ export default function Ingredients(props) {
     const fetchIngredients = async () => {
       const ingredientsData = await getOneRecipe(Number(id))
       setRec(ingredientsData)
+      console.log(rec)
     }
     fetchIngredients()
   }, [])
@@ -33,21 +34,22 @@ export default function Ingredients(props) {
               <h4 className="more-details-name ing">{`${ingredient.name}, ${ingredient.quantity}`}</h4>
             </div>)}
         </div>
-        {/* {props.currentUser.rec.user_id === currentUser.id ? */}
+        
         <button className="add-ingredients-button"
           onClick={
-          () => { ingredientToggle ? setIngredientToggle(false) : setIngredientToggle(true) }}
-          >Add Ingredients</button>
+          () => { ingredientToggle ? setIngredientToggle(false) : setIngredientToggle(true) }}>
+          Add Ingredients</button>
           {ingredientToggle &&
-          <AddIngredients />
-         } 
+          <AddIngredients handleAddIngredient={props.handleAddIngredient}/>
+        } 
+        {rec.user_id && rec.user_id === props.currentUser?.id ?
         < div className="more-details-button-container">
         <button className="details-button" onClick={() => props.handleDelete(rec.id)}>Delete Recipe</button>
         <Link to={`/recipes/${rec.id}/edit`}><button className="details-button">Edit Recipe</button></Link>
       </div>
-      
+      : <div></div>} 
       </div>
-    {/* : <div></div>} */}
+      
       </div>
   )
 }

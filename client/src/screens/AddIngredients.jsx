@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import '../components/Ingredients.css'
 
 export default function AddIngredients(props) {
+  console.log(props)
   const [ing, setIng] = useState({
     name: "",
     quantity: "",

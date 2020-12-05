@@ -75,6 +75,7 @@ export default function MainContainer(props) {
         <Ingredients
           currentUser={currentUser}
           handleDelete={handleDelete}
+          handleAddIngredient={handleAddIngredient}
         />
       </Route>
 
