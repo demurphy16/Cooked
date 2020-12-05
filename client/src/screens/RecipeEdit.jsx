@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react'
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+
+import './RecipeEdit.css'
 
 export default function RecipeEdit(props) {
 
@@ -34,11 +36,14 @@ export default function RecipeEdit(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <div className="edit-ultra-container">
+      <div className='edit-page-container'>
+    <form className="edit-form"
+      onSubmit={(e) => {
       e.preventDefault()
       props.handleUpdate(id, formData)
     }}>
-      <h3>Edit a Recipe</h3>
+      <h3>Edit Your Recipe</h3>
       <label>Recipe Name:
     <input
           type='text'
@@ -63,7 +68,9 @@ export default function RecipeEdit(props) {
           onChange={handleChange}
         />
       </label>
-      <button>Add Ingredients</button>
-    </form>
+      <button>Submit</button>
+      </form>
+    </div>
+    </div>
   )
 }
