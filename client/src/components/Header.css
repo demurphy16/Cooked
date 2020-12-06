@@ -2,11 +2,24 @@
   border-bottom: 3px ridge black;
   background-color: rgba(123, 123, 123, 0.947);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 95px;
   position: fixed;
   top: 0;
   width: 100%
+}
+
+.header-link {
+  margin: 0 45px;
+  min-width:105px;
+}
+
+@media screen and (max-width: 760px ) {
+
+  .header-link {
+    margin: 0 15px;
+  }
+
 }
 

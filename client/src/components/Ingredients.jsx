@@ -35,18 +35,19 @@ export default function Ingredients(props) {
             </div>)}
         </div>
         
+        {rec.user_id && rec.user_id === props.currentUser?.id ?
+        <div className="add-ingred-button-container">
         <button className="add-ingredients-button"
           onClick={
           () => { ingredientToggle ? setIngredientToggle(false) : setIngredientToggle(true) }}>
-          Add Ingredients</button>
-          {ingredientToggle &&
-          <AddIngredients handleAddIngredient={props.handleAddIngredient}/>
-        } 
-        {rec.user_id && rec.user_id === props.currentUser?.id ?
+              Add Ingredients</button>
+            {ingredientToggle &&
+              <AddIngredients handleAddIngredient={props.handleAddIngredient} />}
         < div className="more-details-button-container">
         <button className="details-button" onClick={() => props.handleDelete(rec.id)}>Delete Recipe</button>
         <Link to={`/recipes/${rec.id}/edit`}><button className="details-button">Edit Recipe</button></Link>
-      </div>
+            </div>
+            </div>
       : <div></div>} 
       </div>
       

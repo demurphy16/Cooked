@@ -28,9 +28,15 @@
   justify-content: space-around;
   margin-bottom: 25px;
 }
+.add-ingred-button-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
 
 .add-ingredients-button {
   margin-bottom: 25px;
+  width: 115px;
 }
 .add-ingred-form {
   display: flex;
@@ -42,4 +48,16 @@
 
 .add-ingredients-button {
   margin-top: 35px;
+}
+
+@media screen and (max-width: 760px) {
+
+  .more-details-img {
+    width: 380px;
+  }
+
+  .more-details-button-container {
+    width: 400px;
+  }
+
 }

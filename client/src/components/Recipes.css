@@ -42,3 +42,16 @@
   padding: 15px;
   padding-bottom: 45px;
 }
+
+@media screen and (max-width: 760px ) {
+
+  .recipe-container {
+    min-width: 330px;
+    min-height: 330px;
+  }
+  
+  .recipe-image {
+    width: 250px;
+  }
+
+}

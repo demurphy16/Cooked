@@ -31,7 +31,6 @@ export default function AddIngredients(props) {
   return (
     <div className="add-ultra-container">
       <div className="add-page-container">
-      <h2>Add Ingredient</h2>
       <div className="add-form-container">
       <form className="add-ingred-form"
         onSubmit={(e) => {
