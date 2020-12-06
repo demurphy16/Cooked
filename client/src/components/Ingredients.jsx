@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams, useHistory, Link, } from 'react-router-dom'
+import { useParams, Link, } from 'react-router-dom'
 import AddIngredients from '../screens/AddIngredients'
 
 import { getOneRecipe } from '../services/recipes'
@@ -7,7 +7,6 @@ import './Ingredients.css'
 
 
 export default function Ingredients(props) {
-  const history = useHistory()
   const { id } = useParams()
   const [rec, setRec] = useState([])
   const [ingredientToggle, setIngredientToggle] = useState(false)
@@ -19,6 +18,7 @@ export default function Ingredients(props) {
       console.log(rec)
     }
     fetchIngredients()
+    // eslint-disable-next-line
   }, [])
 
   return (
@@ -26,7 +26,7 @@ export default function Ingredients(props) {
       <div className="more-details-page-container">
         <h2 className="more-details-title">{rec.name}</h2>
         <div>
-        <img className="more-details-img"src={rec.img} />
+        <img alt="recipe" className="more-details-img"src={rec.img} />
         </div>
           <div className="more-details-container">
           {rec.ingredients && rec.ingredients.map(ingredient =>

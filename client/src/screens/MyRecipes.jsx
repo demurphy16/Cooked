@@ -24,7 +24,7 @@ export default function MyRecipes() {
           <h5 className="recipe-name recipe">{myRecipe.name}</h5>
           <h5 className="recipe-time recipe">Cook Time: {myRecipe.time}</h5>
           <Link to={`/recipes/${myRecipe.id}`}>
-            <img className="recipe-image" src={myRecipe.img} />
+            <img alt ="recipe" className="recipe-image" src={myRecipe.img} />
           </Link>
         </div>
       )}

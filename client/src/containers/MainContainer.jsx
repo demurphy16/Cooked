@@ -38,7 +38,7 @@ export default function MainContainer(props) {
 
   const handleDelete = async (id) => {
     await destroyRecipe(id)
-    setRecipes(prevState => prevState.filter(recipe => recipe.id != id))
+    setRecipes(prevState => prevState.filter(recipe => recipe.id !== id))
     history.push('/recipes/myRecipes')
   }
 
@@ -61,7 +61,8 @@ export default function MainContainer(props) {
     
       <Route path={`/recipes/:id/ingredients`}>
         <AddIngredients
-        handleAddIngredient={handleAddIngredient}
+          handleAddIngredient={handleAddIngredient}
+          ingredients={ingredients}
         />    
       </Route>
       

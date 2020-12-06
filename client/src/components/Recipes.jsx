@@ -12,7 +12,7 @@ export default function Recipes(props) {
           <div className="recipe-container">
             <h4 className="recipe-name recipe">{recipe.name}</h4>
             <h5 className="recipe-name recipe">Cook Time: {recipe.time}</h5>
-              <img className="recipe-image" src={recipe.img} />
+              <img alt="recipe" className="recipe-image" src={recipe.img} />
           </div>
         </Link>
       )}
