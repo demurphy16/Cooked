@@ -26,7 +26,7 @@ export default function MainContainer(props) {
   const handleCreate = async (recipeData) => {
     const newRecipe = await createRecipe(recipeData)
     setRecipes(prevState => [...prevState, newRecipe])
-    history.push(`/recipes/${newRecipe.id}/ingredients`)
+    history.push(`/recipes/${newRecipe.id}`)
   }
   const handleUpdate = async (id, recipeData) => {
     const updatedRecipe = await updateRecipe(id, recipeData)

@@ -18,6 +18,7 @@ export default function RecipeCreate(props) {
   }
 
   return (
+    <div className="create-ultra-container">
     <div className="create-page-container">
     <div className="create-form-container">
     <form className="create-form"
@@ -53,6 +54,7 @@ export default function RecipeCreate(props) {
       <button>Create</button>
       </form >
     </div>
-    </div>
+      </div>
+      </div>
   )
 }

@@ -1,45 +1,39 @@
-.more-details-ultra-container {
+/* .add-ultra-container {
   display: flex;
   justify-content: center;
   background-image: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
   background-size: cover;
+  height: 100vh;
 }
 
-.more-details-page-container {
+.add-page-container {
   margin-top: 25vh;
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.486);
   border: 3px ridge black;
   background-image: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 70vw;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.more-details-img {
+.add-form-container {
   border: 2px ridge black;
-}
-
-.more-details-button-container {
-  width: 450px;
+  min-height: 300px;
+  width: 300px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 25px;
-}
-
-.add-ingredients-button {
-  margin-bottom: 25px;
-}
-.add-ingred-form {
-  display: flex;
-  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
   height: 95px;
 }
 
-.add-ingredients-button {
-  margin-top: 35px;
-}
+.add-ingred-form {
+  /* border: 1px solid red; */
+  /* height: 135px; */
+/* }  */

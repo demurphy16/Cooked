@@ -3,6 +3,7 @@ import { getOneRecipe } from '../services/recipes'
 import { useParams } from 'react-router-dom'
 
 import '../components/Ingredients.css'
+import './AddIngredients.css'
 
 export default function AddIngredients(props) {
   console.log(props)
@@ -28,7 +29,10 @@ export default function AddIngredients(props) {
     fetchIngredients()
   }, [id])
   return (
-    <div>
+    <div className="add-ultra-container">
+      <div className="add-page-container">
+      <h2>Add Ingredient</h2>
+      <div className="add-form-container">
       <form className="add-ingred-form"
         onSubmit={(e) => {
         e.preventDefault()
@@ -50,6 +54,8 @@ export default function AddIngredients(props) {
         />
         <button className="add-ingred-button">Add Your Ingredients</button>
       </form>
+      </div>
+    </div>
     </div>
   )
 }
