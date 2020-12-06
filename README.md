@@ -145,19 +145,30 @@ https://app.diagrams.net/#G1pGXRmmefg2CcqLPcfMfu97hfSGCnUL77
 
 src
 |__ components/
-      |__ Header.jsx
+      |__Header.jsx
+      |__Header.css
+      |__Ingredients.css
+      |__Ingredients.jsx
+      |__Recipes.css
+      |__Recipes.jsx
 |__ containers/
       |__MainContainer.jsx
 |__ layouts/
       |__Layout.jsx
 |__ screens/
+      |__AddIngredients.css
+      |__AddIngredients.jsx
+      |__Home.css
+      |__Home.jsx
+      |__RecipeCreate.css
       |__RecipeCreate.jsx
+      |__RecipeEdit.css
       |__RecipeEdit.jsx
-      |__Recipes.jsx
+      |__Login.css
       |__Login.jsx
       |__Register.jsx
       |__MyRecipes.jsx
-      |__IngredientList
+      |__MoreDetails.css
       |__MoreDetails.jsx
 |__ services/
       |__apiConfig.js
@@ -179,18 +190,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Boiler Plate Ruby/Rails    |    H     |     3 hrs      |     TBD     |    TBD   |
-| Models/Controllers/Routes |    H     |     3 hrs      |     TBD     |     TBD     |
-| Backend CRUD             |       H   |     4 hrs      |     TBD   |     TBD     |
-| Seed Data             |      M    |     4 hrs      |     TBD    |     TBD     |
-| Backend Testing            |    M      |     1 hrs      |     TBD     |     TBD     |
-| Font End CRUD             |      M    |     6 hrs      |     TBD    |     TBD     |
-| Login/Register             |      M    |     4 hrs      |     TBD     |     TBD     |
-| Stlying Basics             |      M    |     2 hrs      |     TBD     |     TBD     |
-| User Authentification             |     L     |     4 hrs      |     TBD     |     TBD     |
-| Stlying Advanced            |     L     |     5 hrs      |     TBD     |     TBD     |
-| Debug/Deploy             |      L    |     4 hrs      |     TBD     |     TBD     |
-| Total            |      L    |     40 hrs      |     TBD     |     TBD     |
+| Boiler Plate Ruby/Rails    |    H     |     3 hrs      |     3     |    TBD   |
+| Models/Controllers/Routes |    H     |     3 hrs      |     4     |     TBD     |
+| Backend CRUD             |       H   |     4 hrs      |     4   |     TBD     |
+| Seed Data             |      M    |     4 hrs      |     2    |     TBD     |
+| Backend Testing            |    M      |     1 hrs      |     1     |     TBD     |
+| Font End CRUD             |      M    |     6 hrs      |     10    |     TBD     |
+| Login/Register             |      M    |     4 hrs      |     3     |     TBD     |
+| Stlying Basics             |      M    |     2 hrs      |     2     |     TBD     |
+| User Authentification             |     L     |     4 hrs      |     3     |     TBD     |
+| Stlying Advanced            |     L     |     5 hrs      |     5     |     TBD     |
+| Debug/Deploy             |      L    |     4 hrs      |     2     |     TBD     |
+| Total            |      L    |     40 hrs      |     39 hrs     |     TBD     |
 
 
 
